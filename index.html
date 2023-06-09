@@ -19,9 +19,11 @@
         content="https://images.unsplash.com/photo-1655353480234-104d187f8afc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1056&q=80">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,7 +48,14 @@
         </nav>
     </header>
     <main>
-        <section class="left-section">
+
+
+
+
+        <!-- Left section -->
+
+
+        <section class="left-section" data-aos="fade-up">
             <div class="left-top">
                 <span>more offers</span>
                 <h2>There is <br> somthing else for you</h2>
@@ -64,7 +73,14 @@
             </div>
 
         </section>
-        <section class="right-section">
+
+
+        <!-- rigth section -->
+
+
+
+        <section class="right-section" data-aos="fade-up" data-aos-delay="50"
+        data-aos-duration="1000">
             <a class="top" href="#">
                 <div class="top-header">
                     <span>World hearing technology</span>
@@ -77,7 +93,7 @@
                 </div>
             </a>
             <div class="bottom">
-                <a class="left-bottom" href="#">
+                <a class="left-bottom" href="#" data-aos="fade-up">
                     <div class="left-bottom-header">
                         <span>Discover <br> our History</span>
                         <ion-icon class="rotate" name="arrow-back-outline"></ion-icon>
@@ -86,9 +102,9 @@
                         <h3>About us</h3>
                     </div>
                 </a>
-                <a class="right-bottom" href="#">
+                <a class="right-bottom" href="#" data-aos="fade-up">
                     <div class="right-bottom-header">
-                        <span>Have  Some <br> Questipons ?</span>
+                        <span>Have Some <br> Questipons ?</span>
                         <ion-icon class="rotate" name="arrow-back-outline"></ion-icon>
                     </div>
                     <div class="right-bottom-footer">
@@ -107,6 +123,11 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
