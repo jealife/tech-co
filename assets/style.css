@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #2d3235;
+
+}
+
+body {
+    background: radial-gradient(circle, #e6e6e8 6%, transparent 1%);
+    background-size: 5em 5em;
+    background-color: #ffffff;
+    opacity: 1;
+    background-attachment: fixed;
+}
+
+header,
+main {
+    display: flex;
+    width: 100%;
+}
+
+header {
+    top: 0;
+    position: absolute;
+    z-index: 99;
+}
+
+
+
+main {
+    padding: 5.5rem 25px 25px;
+    align-items: center;
+    gap: 24px;
+    height: 100lvh;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 24px;
+}
+
+nav .menu-logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu-logo .logo span {
+    padding: 14px;
+    clip-path: circle();
+    background-color: #000;
+    color: #fff;
+}
+
+nav .menu-logo .menu {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+nav .menu-logo .menu a {
+    margin-left: 1rem;
+}
+
+.btn-container-nav {
+    display: flex;
+    background-color: #e9e9e9;
+    border-radius: 14px;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+nav .btn-container-nav .btn {
+    transition: .5s all;
+    padding: 0.5rem 1rem;
+}
+
+nav .btn-container-nav .btn-dark {
+    background-color: #000;
+    border-radius: 12px;
+    color: #fff;
+    ;
+}
+
+nav .btn-container-nav .btn-dark:hover,
+.btn-white:hover {
+    border-radius: 12px;
+    background-color: #fff;
+    color: #000;
+    box-shadow: #0000002c 0px 5px 10px 5px;
+}
+
+/* nav .btn-container-nav:hover ::before{
+    content: " ";
+    color: red;
+    width:50px;
+    border-radius:15px;
+    overflow:hidden;
+    font-weight: bold;
+    z-index:-5;
+    background-color: #000;
+} */
+
+
+/* ------------------------------- */
+.left-section,
+.right-section {
+    flex: 1;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    gap: 24px;
+    height: 100%;
+}
+
+.left-section {
+    background-image: url(https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80);
+    background-image: url(https://images.unsplash.com/photo-1628841220750-52e52714bb11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 25px 25px 50px;
+    background-position: center;
+
+}
+
+.left-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10;
+    color: #fff;
+}
+
+.left-top span {
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.left-top h2 {
+    font-size: 4.5em;
+}
+
+.right-section {
+    padding: 25px 14px;
+    gap: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-product {
+    width: 220px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    gap: 5;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+.btn-product:hover {
+    color: #98afb9;
+    box-shadow: #ffffff5b 0px 10px 35px 0px;
+}
+
+.btn-txt span {
+    color: #98afb9;
+    font-size: .9rem;
+}
+
+.icon {
+    border-left: 1px solid #94949455;
+    padding: 10px;
+}
+
+.icon:hover {
+    color: #61aac9;
+}
+
+.icon ion-icon {
+    font-size: 24px;
+}
+
+
+/* -------------------------
+ */
+.top,
+.bottom {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    gap: 24px;
+    height: 100%;
+}
+
+.top {
+    border-radius: 25px;
+    width: 100%;
+    flex-direction: column;
+    padding: 15px 25px;
+    background-image: url(https://images.unsplash.com/photo-1655353480234-104d187f8afc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1056&q=80);
+    justify-content: space-between;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top .top-header {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bottom .top-header {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.top .top-header ion-icon,
+.bottom .right-bottom-header ion-icon,
+.bottom .left-bottom-header ion-icon {
+    font-size: 24px;
+    rotate: -225deg;
+    -webkit-rotate: rotate(0deg);
+}
+
+.bottom .right-bottom-header,
+.bottom .left-bottom-header {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.left-bottom-footer h3,
+.right-bottom-footer h3 {
+    font-size: 2.3em;
+}
+
+.top-footer h3 {
+    font-size: 3em;
+}
+
+.bottom .left-bottom,
+.bottom .right-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    padding: 15px 25px;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.bottom .left-bottom {
+    color: #fff;
+    background-color: #c596ef;
+}
+
+.right-bottom {
+
+    background-color: #ade348;
+}
+
+body::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #d6e0e7;
+}
+
+/*------------------- Responsive-------------------- */
+
+@media screen and (max-width: 900px) {
+    main {
+        flex-direction: column;
+        padding: 6rem 20px 20px;
+    }
+
+    nav {
+        position: fixed;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+
+    .menu-logo .menu a {
+        display: none;
+    }
+
+    .right-section {
+        padding: 1px 0px;
+        margin-bottom: 1rem;
+    }
+
+    .left-top h2 {
+        font-size: 3em;
+    }
+
+    .left-bottom-footer h3,
+    .right-bottom-footer h3 {
+        font-size: 1.4rem;
+    }
+
+    .bottom .right-bottom-header,
+    .bottom .left-bottom-header {
+        font-size: 13px;
+        margin-bottom: 1.2rem;
+    }
+
+    .bottom .left-bottom,
+    .bottom .right-bottom {
+        padding: 20px 10px;
+    }
+
+}
