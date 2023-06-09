@@ -309,6 +309,11 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
 
+    .left-section {
+
+        padding: 25px 10px 25px 50px;
+    }
+
     .right-section {
         padding: 1px 0px;
         margin-bottom: 1rem;
